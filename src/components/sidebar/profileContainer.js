@@ -13,7 +13,7 @@ export default class ProfileContainer extends Component {
       <div className="profile-container">
         {this.renderProfilePicture(this.props.imagePath)}
         <h1 className="name" style={{ fontSize: 25 }}>{ this.props.name }</h1>
-        <h3 className="tagline"> { this.props.title } </h3>
+        { this.props.title.split(', ').map(title=> (<h3 className="tagline">{title}</h3>)) }
       </div>
     );
   }

@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 
 export default class Section extends Component {
   render() {
+    const { className, id, icon, title, children } = this.props;
     return (
-      <section className={`section ${this.props.className || ''}`} id={this.props.id || null}>
+      <section className={`section ${className || ''}`} id={id || null}>
         <h2 className="section-title">
-          <i className={`fa fa-${this.props.icon}`} />
-          { this.props.title }
+          <i className={`fa fa-${icon}`} />
+          { title }
         </h2>
-        { this.props.children }
+        { children }
       </section>
     );
   }

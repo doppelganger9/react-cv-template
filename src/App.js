@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
-import './assets/theme/styles.css';
+import './assets/theme/styles-5.css';
 import Section from './components/shared/section';
 import Sidebar from './components/sidebar';
 import Experiences from './components/experiences';
 import Projects from './components/projects';
 import Tags from './components/tags';
+import AppsImagesPortfolio from './components/imagesAppPortfolio';
+import LangEvolution from './components/langEvolution';
+import DoneThisAndThat from './components/doneList';
 
 export default class CV extends Component {
   renderExperiencesSection() {
@@ -16,21 +19,25 @@ export default class CV extends Component {
     }
     return null;
   }
+
   renderProjectsSection() {
     if (this.props.projects) {
       return (<Projects {...this.props.projects} />);
     }
     return null;
   }
+
   renderTags() {
     if (this.props.tags) {
       return (<Tags {...this.props.tags} />);
     }
     return null;
   }
+
   renderOpenSourcePart() {
-    return (<div>You can create your own CV like this, <a href="https://github.com/sbayd/react-cv-template" target="_blank">access to the source code.</a></div>);
-  }     
+    return (<div><a href="https://github.com/doppelganger9/react-cv-template" target="_blank">Le code source de ce CV est disponible sur GitHub</a></div>);
+  }
+
   renderCareerProfile() {
     const { icon, sectionTitle, description } = this.props.careerProfile;
     const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: description }} />);
@@ -53,9 +60,12 @@ export default class CV extends Component {
         />
         <div className="main-wrapper">
           {this.renderCareerProfile()}
+          <LangEvolution/>
           {this.renderExperiencesSection()}
-          {this.renderProjectsSection()}
+          {/*this.renderProjectsSection()*/}
+          <AppsImagesPortfolio/>
           {this.renderTags()}
+          <DoneThisAndThat/>
           {this.renderOpenSourcePart()}
         </div>
       </div>

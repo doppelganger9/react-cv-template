@@ -1,4 +1,4 @@
-/*   
+/*
  * Template Name: Orbit - Responsive Resume/CV Template for Developers
  * Version: 1.0
  * Author: Xiaoying Riley
@@ -54,7 +54,7 @@ p {
 .sidebar-wrapper {
   background: #FDA246;
   position: absolute;
-  right: 0;
+  left: 0;
   width: 240px;
   height: 100%;
   min-height: 800px;
@@ -84,6 +84,7 @@ p {
 }
 .sidebar-wrapper .profile {
   margin-bottom: 15px;
+  border-radius: 100%;
 }
 .sidebar-wrapper .contact-list .fa {
   margin-right: 5px;
@@ -155,7 +156,7 @@ p {
 .main-wrapper {
   background: #fff;
   padding: 60px;
-  padding-right: 300px;
+  padding-left: 300px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -227,8 +228,11 @@ p {
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
 }
+ul.skillset {
+    padding-left: 0;
+}
 .skillset .item {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   overflow: hidden;
 }
 .skillset .level-title {
@@ -257,7 +261,7 @@ p {
   color: #fb866a;
 }
 /* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .sidebar-wrapper {
     position: static;
     width: inherit;
@@ -276,7 +280,7 @@ p {
 }
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .skillset .level-title {
     display: inline-block;
     float: left;
@@ -293,3 +297,34 @@ p {
 }
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
+
+@media print {
+    html {
+        background: transparent;
+    }
+    body {
+        padding: 0 !important;
+        max-height: 200hh;
+        background: transparent;
+    }
+    .wrapper {
+        max-width: 100vw;
+    }
+    .main-wrapper {
+        padding: 40px;
+        padding-left: calc(27% + 40px);
+    }
+    .sidebar-wrapper {
+        width: 27%;
+        background: linear-gradient(#FDA246, 80%, white) !important;
+    }
+    .skillset {
+        padding-left: 0 !important;
+    }
+    div.item {
+        page-break-inside: avoid;
+    }
+    div.container-block {
+        page-break-inside: avoid;
+    }
+}
