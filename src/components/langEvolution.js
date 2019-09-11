@@ -4,7 +4,7 @@ import langs from '../assets/langs.jpg';
 
 export default function() {
     return (
-        <Section className="lang-evol-section" icon="area-chart" title="Evolutions Langages de Programmation">
+        <Section className="lang-evol-section" icon="area-chart" title="Evolution Langages de Programmation">
         <img src={langs} style={{
             objectFit: 'cover',
             objectPosition: '50% -60px',

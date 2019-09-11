@@ -28,6 +28,10 @@ export default class Sidebar extends Component {
     return null;
   }
 
+  renderOpenSourcePart() {
+    return (<div className="container-block"><a href="https://github.com/doppelganger9/react-cv-template" target="_blank">Le code source de ce CV est disponible sur GitHub</a></div>);
+  }
+
   renderProfileContainer() {
     return (<ProfileContainer
       name={this.props.name}
@@ -73,6 +77,7 @@ export default class Sidebar extends Component {
         {this.renderLanguages()}
         {this.renderInterests()}
         {this.renderQrCode()}
+        {this.renderOpenSourcePart()}
       </div>
     );
   }

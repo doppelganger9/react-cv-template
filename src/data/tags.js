@@ -34,7 +34,8 @@ export const tags = {
     'Facilitation de réunions',
     'Architecture N-Tier',
     'APIs RESTful',
-    'Architecture SOA']
+    'Architecture SOA',
+    'Microservices', 'Kubernetes', 'Docker', 'Springboot']
 };
 
 export default tags;

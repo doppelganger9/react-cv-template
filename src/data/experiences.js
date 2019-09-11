@@ -3,8 +3,26 @@ export const experiences = {
   icon: null,
   description: null,
   list: [
+    // {
+    //   title: 'Tech Lead Full Stack Freelance',
+    //   //company: '',
+    //   description: `Après 10 ans au sein d'un grand groupe d'Assurance et 7 ans de missions en ESN, j'ai choisi un nouveau mode de travail.`,
+    //   companyLink: 'https://lacourt.dev',
+    //   companyShortDetail: '',
+    //   date: '2019.10 - present'
+    // },
     {
-      title: 'Tech Lead équipe Applications Mobile',
+      title: 'Tech Lead Full Stack Pizza Team Signature Electronique et Espace Conversationnel',
+      company: 'Generali',
+      description: `Au sein d'une "pizza team" de 9 personnes, j'ai continué dans mon rôle de Tech Lead sur deux solutions majeures de notre département:
+      un socle de signature électronique en MicroServices (CI/CD GitLab, Docker EE, Kubernetes, Angular7, SpringBoot, REST, Swagger, PostgreSQL),
+      mais aussi la fonctionnalité de discussion instantannée Client-Agent et l'UI des chatbots de Generali LEO, LETIZIA (Azure WebApp, Gitlab CI/CD, Java 8, Spring, Hibernate, REST, Swagger, MySQL, Azure Functions, Serverless).`,
+      companyLink: 'https://www.generali.fr',
+      companyShortDetail: '',
+      date: '2018.12 - 2019.10'
+    },
+    {
+      title: 'Tech Lead Full Stack équipe Applications Mobile',
       company: 'Generali',
       description: `En tant que Tech Lead, j'anime et m'appuie sur l'expertise de l'équipe de développement, en méthodologie Agile (Scrum + Kanban).
       Notre équipe fait partie d'une communauté internationale pour la refonte de l'application Mon Generali, et j'ai pu représenter Generali France à cette occasion.
@@ -13,10 +31,10 @@ export const experiences = {
       Et 4 anciens collègues de mon équipe sont déjà partis sur cette route.`,
       companyLink: 'https://www.generali.fr',
       companyShortDetail: '',
-      date: '2015.4 - Present'
+      date: '2015.4 - 2018.12'
     },
     {
-      title: 'Développeur Mobile',
+      title: 'Développeur Mobile Natif & Hybride',
       company: 'Generali',
       description: `J'ai eu l'occasion de monter rapidement en compétence sur de nouvelles technologies (dev. iOS et Android natif) et langages (Objective C) pour maintenir, faire évoluer et démarrer de nouveaux projets d'applications mobiles pour Generali et ses partenaires.
       De l'idée métier au déploiement sur les Stores.

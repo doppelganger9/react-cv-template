@@ -34,10 +34,6 @@ export default class CV extends Component {
     return null;
   }
 
-  renderOpenSourcePart() {
-    return (<div><a href="https://github.com/doppelganger9/react-cv-template" target="_blank">Le code source de ce CV est disponible sur GitHub</a></div>);
-  }
-
   renderCareerProfile() {
     const { icon, sectionTitle, description } = this.props.careerProfile;
     const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: description }} />);
@@ -66,7 +62,6 @@ export default class CV extends Component {
           <AppsImagesPortfolio/>
           {this.renderTags()}
           <DoneThisAndThat/>
-          {this.renderOpenSourcePart()}
         </div>
       </div>
     );

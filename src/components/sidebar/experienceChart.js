@@ -2,7 +2,7 @@ import React from 'react';
 
 function renderLine({icon, label, years}) {
     return (
-        <li>
+        <li key={label}>
             <h4>
                 <div style={{width: '1em', display: 'inline-block', textAlign:'center'}}><i className={`fa fa-${icon}`}></i></div>
                 <div style={{width: '3.5em', display: 'inline-block', textAlign:'center'}}>{label}:</div>
