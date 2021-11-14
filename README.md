@@ -16,7 +16,8 @@ Switch theme by changing this line in `src/App.js`: `import './assets/theme/styl
 
 ## Sample Page
 
-[http://sbaydin.com](http://sbaydin.com/)
+- [http://sbaydin.com](http://sbaydin.com/)
+- this fork is hosted on GitHub Pages : [https://doppelganger9.github.io/react-cv-template/](https://doppelganger9.github.io/react-cv-template/)
 
 ## Credits
 
@@ -25,6 +26,7 @@ Switch theme by changing this line in `src/App.js`: `import './assets/theme/styl
 - [Bootstrap](http://getbootstrap.com/)
 - [FontAwesome 4](https://fontawesome.com/v4.7.0/)
 - [jQuery](http://jquery.com/)
+- [this article](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f) to deploy on GitHub Pages
 
 ## Support on Beerpay
 
