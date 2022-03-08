@@ -8,12 +8,14 @@ export default class ProfileContainer extends Component {
     }
     return null;
   }
+
   render() {
+    const { title, name, imagePath } = this.props;
     return (
       <div className="profile-container">
-        {this.renderProfilePicture(this.props.imagePath)}
-        <h1 className="name" style={{ fontSize: 25 }}>{ this.props.name }</h1>
-        { this.props.title.split(', ').map((title, i)=> (<h3 className="tagline" key={i}>{title}</h3>)) }
+        {this.renderProfilePicture(imagePath)}
+        <h1 className="name" style={{ fontSize: 25 }}>{ name }</h1>
+        { title.split(', ').map((titleWords, i) => (<h3 className="tagline" key={i}>{titleWords}</h3>)) }
       </div>
     );
   }

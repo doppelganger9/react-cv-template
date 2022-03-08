@@ -19,25 +19,43 @@ export default class ContactDetails extends Component {
     return (
       <li className={className}>
         <i className={`fa ${iconName}`} />
-        <a href={`//${href}`} target="_blank"> {data} </a>
+        <a href={`//${href}`} target="_blank" rel="noopener noreferrer">
+          {' '}
+          {data}
+          {' '}
+        </a>
       </li>
     );
   }
+
   render() {
+    const {
+      mail,
+      phoneNumber,
+      city,
+      website,
+      linkedin,
+      twitter,
+      github,
+      gitlab,
+      dev,
+      codepen,
+      stackoverflow
+    } = this.props;
     return (
       <div className="contact-container container-block">
         <ul className="list-unstyled contact-list">
-          {this.renderListItem('email', this.props.mail, 'fa-envelope', 'email')}
-          {this.renderListItem('phone', this.props.phoneNumber, 'fa-phone', 'phone')}
-          {this.renderListItem('city', this.props.city, 'fa-map-marker', 'city')}
-          {this.renderListItem('website', this.props.website, 'fa-globe', 'link')}
-          {this.renderListItem('linkedin', this.props.linkedin, 'fa-linkedin', 'link')}
-          {this.renderListItem('twitter', this.props.twitter, 'fa-twitter', 'link')}
-          {this.renderListItem('github', this.props.github, 'fa-github', 'link')}
-          {this.renderListItem('gitlab', this.props.gitlab, 'fa-gitlab', 'link')}
-          {this.renderListItem('dev', this.props.dev, 'fa-dev', 'link')}
-          {this.renderListItem('codepen', this.props.codepen, 'fa-codepen', 'link')}
-          {this.renderListItem('stackoverflow', this.props.stackoverflow, 'fa-stack-overflow', 'link')}
+          {this.renderListItem('email', mail, 'fa-envelope', 'email')}
+          {this.renderListItem('phone', phoneNumber, 'fa-phone', 'phone')}
+          {this.renderListItem('city', city, 'fa-map-marker', 'city')}
+          {this.renderListItem('website', website, 'fa-globe', 'link')}
+          {this.renderListItem('linkedin', linkedin, 'fa-linkedin', 'link')}
+          {this.renderListItem('twitter', twitter, 'fa-twitter', 'link')}
+          {this.renderListItem('github', github, 'fa-github', 'link')}
+          {this.renderListItem('gitlab', gitlab, 'fa-gitlab', 'link')}
+          {this.renderListItem('dev', dev, 'fa-dev', 'link')}
+          {this.renderListItem('codepen', codepen, 'fa-codepen', 'link')}
+          {this.renderListItem('stackoverflow', stackoverflow, 'fa-stack-overflow', 'link')}
         </ul>
       </div>
     );
@@ -49,6 +67,7 @@ ContactDetails.propTypes = {
   phoneNumber: PropTypes.string,
   website: PropTypes.string,
   linkedin: PropTypes.string,
+  city: PropTypes.string,
   github: PropTypes.string,
   gitlab: PropTypes.string,
   dev: PropTypes.string,
@@ -61,6 +80,7 @@ ContactDetails.defaultProps = {
   phoneNumber: null,
   website: null,
   linkedin: null,
+  city: null,
   github: null,
   gitlab: null,
   dev: null,

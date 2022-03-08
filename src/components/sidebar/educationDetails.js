@@ -11,11 +11,13 @@ export default class EducationDetails extends Component {
       </div>
     );
   }
+
   render() {
+    const { list, title } = this.props;
     return (
       <div className="education-container container-block">
-        <h2 className="container-block-title">{this.props.title || 'Education'}</h2>
-        {this.props.list.map((item, i) => {
+        <h2 className="container-block-title">{title || 'Education'}</h2>
+        {list.map((item, i) => {
           return this.renderListItem(item, i);
         })}
       </div>
@@ -27,4 +29,3 @@ EducationDetails.propTypes = {
   list: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   title: PropTypes.string.isRequired
 };
-

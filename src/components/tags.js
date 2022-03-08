@@ -10,6 +10,7 @@ export default class Tags extends Component {
       </li>
     );
   }
+
   render() {
     const { icon, sectionTitle, list } = this.props;
     return (
@@ -36,4 +37,3 @@ Tags.propTypes = {
   sectionTitle: PropTypes.string.isRequired,
   icon: PropTypes.string
 };
-

@@ -14,28 +14,32 @@ import DoneThisAndThat from './components/doneList';
 
 export default class CV extends Component {
   renderExperiencesSection() {
-    if (this.props.experiences) {
-      return (<Experiences {...this.props.experiences} />);
+    const { experiences } = this.props;
+    if (experiences) {
+      return (<Experiences {...experiences} />);
     }
     return null;
   }
 
   renderProjectsSection() {
-    if (this.props.projects) {
-      return (<Projects {...this.props.projects} />);
+    const { projects } = this.props;
+    if (projects) {
+      return (<Projects {...projects} />);
     }
     return null;
   }
 
   renderTags() {
-    if (this.props.tags) {
-      return (<Tags {...this.props.tags} />);
+    const { tags } = this.props;
+    if (tags) {
+      return (<Tags {...tags} />);
     }
     return null;
   }
 
   renderCareerProfile() {
-    const { icon, sectionTitle, description } = this.props.careerProfile;
+    const { careerProfile } = this.props;
+    const { icon, sectionTitle, description } = careerProfile;
     const innerContent = (<div className="summary" dangerouslySetInnerHTML={{ __html: description }} />);
     return (
       <Section
@@ -49,19 +53,20 @@ export default class CV extends Component {
   }
 
   render() {
+    const { profile } = this.props;
     return (
       <div className="wrapper">
         <Sidebar
-          {...this.props.profile}
+          {...profile}
         />
         <div className="main-wrapper">
           {this.renderCareerProfile()}
-          <LangEvolution/>
+          <LangEvolution />
           {this.renderExperiencesSection()}
-          {/*this.renderProjectsSection()*/}
-          <AppsImagesPortfolio/>
+          {/* this.renderProjectsSection() */}
+          <AppsImagesPortfolio />
           {this.renderTags()}
-          <DoneThisAndThat/>
+          <DoneThisAndThat />
         </div>
       </div>
     );

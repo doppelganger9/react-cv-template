@@ -3,14 +3,14 @@ export const experiences = {
   icon: null,
   description: null,
   list: [
-    // {
-    //   title: 'Tech Lead Full Stack Freelance',
-    //   //company: '',
-    //   description: `Après 10 ans au sein d'un grand groupe d'Assurance et 7 ans de missions en ESN, j'ai choisi un nouveau mode de travail.`,
-    //   companyLink: 'https://lacourt.dev',
-    //   companyShortDetail: '',
-    //   date: '2019.10 - present'
-    // },
+    {
+      title: 'Développeur Full Stack Freelance',
+      // company: '',
+      description: `Après 10 ans au sein d'un grand groupe d'Assurance et 7 ans de missions en ESN, j'ai choisi un nouveau mode de travail.`,
+      companyLink: 'https://lacourt.dev',
+      companyShortDetail: '',
+      date: '2019.10 - present'
+    },
     {
       title: 'Tech Lead Full Stack Pizza Team Signature Electronique et Espace Conversationnel',
       company: 'Generali',

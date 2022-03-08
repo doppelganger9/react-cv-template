@@ -16,13 +16,15 @@ export default class Projects extends Component {
       </div>
     );
   }
+
   renderProjectTitle(project) {
     let inner = project.title;
     if (project.url) {
-      inner = <a href={project.url} target="_blank">{project.title}</a>;
+      inner = <a href={project.url} target="_blank" rel="noopener noreferrer">{project.title}</a>;
     }
     return (<span className="project-title" style={{ marginRight: 5 }}>{inner}</span>);
   }
+
   renderIntro(description) {
     if (!description) { return null; }
     return (
@@ -30,6 +32,7 @@ export default class Projects extends Component {
         <p dangerouslySetInnerHTML={{ __html: description }} />
       </div>);
   }
+
   renderCategory(category) {
     return (
       <div className="category-item">
@@ -41,6 +44,7 @@ export default class Projects extends Component {
       </div>
     );
   }
+
   render() {
     const {
       icon,
@@ -74,4 +78,3 @@ Projects.propTypes = {
   sectionTitle: PropTypes.string.isRequired,
   icon: PropTypes.string
 };
-
