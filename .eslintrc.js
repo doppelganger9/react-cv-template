@@ -5,6 +5,11 @@ module.exports = {
     'jsx-a11y',
     'import',
   ],
+  'env': {
+    'browser': true,
+    'es6': true,
+    'jest': true,
+  },
   'rules': {
     'react/prefer-stateless-function': 0,
     'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
@@ -29,6 +34,6 @@ module.exports = {
     'import/no-named-as-default': 0,
     'default-case': 0,
     'max-len': 0,
-    'react/require-default-props': 0
+    'react/require-default-props': 0,
   }
 };

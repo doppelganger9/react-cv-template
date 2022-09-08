@@ -3,14 +3,35 @@ export const experiences = {
   icon: null,
   description: null,
   list: [
-    // {
-    //   title: 'Tech Lead Full Stack Freelance',
-    //   //company: '',
-    //   description: `Après 10 ans au sein d'un grand groupe d'Assurance et 7 ans de missions en ESN, j'ai choisi un nouveau mode de travail.`,
-    //   companyLink: 'https://lacourt.dev',
-    //   companyShortDetail: '',
-    //   date: '2019.10 - present'
-    // },
+    {
+      title: 'Lead Dev API, Web et Mobile pour fronts clients digitaux',
+      company: 'Harmonie Mutuelle - Groupe Vyv (freelance)',
+      description: `Pendant 3 ans, j'ai pu accompagner mon client <b>Harmonie Mutuelle</b> 
+        au sein du Stream Agile "Front Digitaux" constitué de 9 à 12 personnes, 
+        sur le périmètre comprenant les produits "Parcours d'Affiliation", Extranet Adhérents, Extranet Courtier et Collaborateurs des entreprise affiliées 
+        et les applications mobiles "Harmonie et Moi", "MESE et moi" et "Ma Complémentaire Santé TotalEnergie",
+        pour <ul>
+      <li>développer des <b>APIs RESTful Java Springboot</b>,
+      <li>les consommer dans plusieurs frontaux <b>Angular</b> dont une <b>app mobile hybride Ionic</b>,
+      <li>participer aux <b>migrations techniques de versions</b> (Angular 6 -> 8 -> 10 -> 12, mais aussi en Java sur des versions mineures de Springboot 2.x), 
+      <li>partager mes 14 années d'expérience agile (sans être "Coach Agile") / pris le rôle de <b>Scrum master</b> ou animateur du daily meeting et de quelques retrospectives (car rôle tournant dans l'équipe) sur une <b>cinquantaine de sprints de 3 semaines</b>,
+      <li>mener des <b>refactorings en profondeur</b> sur les différentes bases de code (mobile, web ou java),
+      <li>apporter mon expertise, par exemple, sur <b>git</b> ou les stratégies et l'écriture de <b>tests unitaires</b> en <b>Java</b> et <b>Typescript</b> sur Angular,
+      <li>assister le Lead Tech en place sur le <b>recrutement de nouveaux membres</b> de l'équipe, l'<b>accompagnement de juniors/alternant/nouveaux arrivés</b>,
+      <li>effectuer quelques <b>présentations techniques</b> lors de sessions de vulgarisation (jusqu'à 60 participant en ligne),
+      <li><b>résolu des anomalies</b> de production (dont je n'étais pas forcément l'auteur 😇)
+      </ul>
+      <p>le tout en <b>respectant l'architecture pragmatique en place</b> (CI/CD Jenkins, plusieurs applis Springboot, 
+        plusieurs front Angular6-12, REST, OpenAPI, PostgreSQL, Oracle); 
+      <p>Expert sur la partie mobile (iOS, Android) et après avoir évangélisé sur PWA, 
+      notre équipe a simplifié son process et le time to market en fusionnant le code source de l'app mobile Ionic 
+        et du frontal web Angular en une seule base de code Angular+Capacitor 
+        qui peut maintenant être déployée sur le Web, ou dans les Store.
+        J'ai aussi mis en place une stratégie de déclinaison en marque blanche de l'application Harmonie et Moi, ce qui a donné naissance à 2 autres applications et bien d'autres à venir !`,
+      companyLink: 'https://www.harmonie-mutuelle.fr',
+      companyShortDetail: '',
+      date: '2019.10 - 2022.10'
+    },
     {
       title: 'Tech Lead Full Stack Pizza Team Signature Electronique et Espace Conversationnel',
       company: 'Generali',

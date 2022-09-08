@@ -10,50 +10,66 @@ import Interests from './interests';
 
 export default class Sidebar extends Component {
   renderInterests() {
-    if (this.props.interests) {
-      return (<Interests list={this.props.interests.list} title={this.props.interests.sectionTitle} />);
+    const { interests } = this.props;
+    if (interests) {
+      return (<Interests list={interests.list} title={interests.sectionTitle} />);
     }
     return null;
   }
+
   renderLanguages() {
-    if (this.props.languages) {
-      return (<LanguageDetails list={this.props.languages.list} title={this.props.languages.sectionTitle} />);
-    }
-    return null;
+    const { languages } = this.props;
+    return languages ? (<LanguageDetails list={languages.list} title={languages.sectionTitle} />) : null;
   }
+
   renderEducationDetails() {
-    if (this.props.educationDetails) {
-      return (<EducationDetails list={this.props.educationDetails.list} title={this.props.educationDetails.sectionTitle} />);
+    const { educationDetails } = this.props;
+    if (educationDetails) {
+      return (<EducationDetails list={educationDetails.list} title={educationDetails.sectionTitle} />);
     }
     return null;
   }
 
   renderOpenSourcePart() {
-    return (<div className="container-block"><a href="https://github.com/doppelganger9/react-cv-template" target="_blank">Le code source de ce CV est disponible sur GitHub</a></div>);
+    return (
+      <div className="container-block">
+        <a href="https://github.com/doppelganger9/react-cv-template" target="_blank" rel="noreferrer noopener">
+          Le code source de ce CV est disponible sur GitHub
+        </a>
+      </div>
+    );
   }
 
   renderProfileContainer() {
-    return (<ProfileContainer
-      name={this.props.name}
-      title={this.props.title}
-      imagePath={this.props.imagePath}
-    />);
+    const { name, title, imagePath } = this.props;
+    return (
+      <ProfileContainer
+        name={name}
+        title={title}
+        imagePath={imagePath}
+      />
+    );
   }
 
   renderContactDetails() {
-    return (<ContactDetails
-      mail={this.props.mail}
-      phoneNumber={this.props.phoneNumber}
-      website={this.props.website}
-      city={this.props.city}
-      linkedin={this.props.linkedin}
-      github={this.props.github}
-      gitlab={this.props.gitlab}
-      codepen={this.props.codepen}
-      stackoverflow={this.props.stackoverflow}
-      title={this.props.title}
-      twitter={this.props.twitter}
-    />);
+    const {
+      mail, phoneNumber, website, city, linkedin, github, gitlab, codepen, stackoverflow, title, twitter
+    } = this.props;
+    return (
+      <ContactDetails
+        mail={mail}
+        phoneNumber={phoneNumber}
+        website={website}
+        city={city}
+        linkedin={linkedin}
+        github={github}
+        gitlab={gitlab}
+        codepen={codepen}
+        stackoverflow={stackoverflow}
+        title={title}
+        twitter={twitter}
+      />
+    );
   }
 
   renderQrCode() {
@@ -71,7 +87,7 @@ export default class Sidebar extends Component {
     return (
       <div className="sidebar-wrapper">
         {this.renderProfileContainer()}
-        <ExperienceChart/>
+        <ExperienceChart />
         {this.renderContactDetails()}
         {this.renderEducationDetails()}
         {this.renderLanguages()}
@@ -92,8 +108,11 @@ Sidebar.propTypes = {
   phoneNumber: PropTypes.string,
   website: PropTypes.string,
   linkedin: PropTypes.string,
+  codepen: PropTypes.string,
   github: PropTypes.string,
+  gitlab: PropTypes.string,
   twitter: PropTypes.string,
+  stackoverflow: PropTypes.string,
   educationDetails: PropTypes.shape().isRequired,
   languages: PropTypes.shape().isRequired,
   interests: PropTypes.shape().isRequired,
@@ -105,6 +124,9 @@ Sidebar.defaultProps = {
   website: null,
   city: null,
   linkedin: null,
+  codepen: null,
   github: null,
-  twitter: null
+  gitlab: null,
+  twitter: null,
+  stackoverflow: null
 };

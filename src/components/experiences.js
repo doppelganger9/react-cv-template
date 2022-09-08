@@ -19,12 +19,21 @@ export default class Experiences extends Component {
       </div>
     );
   }
+
   renderCompanySection(company, companyLink, companyShortDetail) {
     if (company && companyLink) {
-      return (<div className="company"> <a href={companyLink} target="_blank">{company}</a> {companyShortDetail || ''}</div>);
+      return (
+        <div className="company">
+          {' '}
+          <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
+          {' '}
+          {companyShortDetail || ''}
+        </div>
+      );
     }
     return null;
   }
+
   render() {
     const { icon, sectionTitle, list } = this.props;
     return (
@@ -47,4 +56,3 @@ Experiences.propTypes = {
   sectionTitle: PropTypes.string.isRequired,
   icon: PropTypes.string
 };
-
