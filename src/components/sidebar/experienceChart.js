@@ -24,9 +24,9 @@ ans
 
 export default function () {
   const xpLines = [
-    { icon: 'cloud', label: 'Web', years: (new Date()).getFullYear() - 2002 - 1 },
-    { icon: 'line-chart', label: 'Agile', years: (new Date()).getFullYear() - 2008 - 1 },
-    { icon: 'mobile', label: 'Mobile', years: (new Date()).getFullYear() - 2011 - 1 },
+    { icon: 'cloud', label: 'Web', years: (new Date()).getFullYear() - 2002 },
+    { icon: 'line-chart', label: 'Agile', years: (new Date()).getFullYear() - 2008 },
+    { icon: 'mobile', label: 'Mobile', years: (new Date()).getFullYear() - 2011 },
   ];
   return (
     <div className="container-block" style={{ backgroundColor: 'rgba(0,0,0,.1)', color: 'white' }}>

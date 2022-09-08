@@ -2,6 +2,7 @@ import React from 'react';
 import Section from './shared/section';
 
 const list = [
+  'fusionner le code web et mobile pour avoir une seule base de code multi-plateforme avec Capacitor et Angular',
   'donner des présentations techniques en interne et parfois en international: CORS, Historique JavaScript, CI/CD Mobile, Web Assembly, Chatbot, Randoris, PWA',
   'mettre en place la partie OAuth2/OpenID Connect (Keycloak) pour le middle/API RESTful de nos sites et applis mobiles',
   'mettre en place et évangéliser sur les revues de code avec une checklist Definition of Done',

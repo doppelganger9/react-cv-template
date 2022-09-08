@@ -90,14 +90,20 @@ p {
   margin-right: 5px;
   font-size: 18px;
   vertical-align: middle;
+  margin-left: -25px;
+  width: 1em;
+  text-align: center;
+}
+.sidebar-wrapper  ul.contact-list {
+  margin-right: -15px;
 }
 .sidebar-wrapper .contact-list li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .sidebar-wrapper .contact-list li:last-child {
   margin-bottom: 0;
 }
-.sidebar-wrapper .contact-list .email .fa {
+.sidebar-wrapper .contact-list .email .fa::before {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
@@ -322,10 +328,10 @@ ul.skillset {
     .skillset {
         padding-left: 0 !important;
     }
-    div.item {
+    /* div.item {
         page-break-inside: avoid;
-    }
-    div.container-block {
+    } */
+    /* div.container-block {
         page-break-inside: avoid;
-    }
+    } */
 }

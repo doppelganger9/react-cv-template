@@ -20,7 +20,7 @@ const profile = {
       {
         degree: `Diplôme d'Ingénieur`,
         school: `ESIEE Paris`,
-        date: '1996-2002'
+        date: '1996-2002',
       },
     ]
   },
@@ -36,7 +36,13 @@ const profile = {
   },
   interests: {
     sectionTitle: 'loisirs',
-    list: ['Canne de Combat (Compétition, Arbitrage, Monitorat)', 'Open Source', 'Competitive Programming']
+    list: [
+      'Canne de Combat (Compétition, Arbitrage, Monitorat)',
+      'Musique',
+      'Jeux de rôles',
+      'Competitive Programming',
+      'Open Source',
+    ]
   }
 };
 

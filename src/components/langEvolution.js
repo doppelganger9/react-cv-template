@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './shared/section';
-import langs from '../assets/langs-2021.png';
+import langs from '../assets/langs-2022.png';
 
 export default function () {
   return (
