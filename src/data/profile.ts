@@ -1,4 +1,5 @@
 import { type ISection } from '.'
+import profileImageUrl from '../assets/profile.jpg'
 
 export interface IProfileHead {
   name: string
@@ -61,7 +62,7 @@ const profile: IProfile = {
   dev: 'dev.to/doppelganger9',
   // stackoverflow: 'stackoverflow.com/users/526660/doppelganger9',//too long and not really relevant.
   codepen: 'codepen.io/doppelganger9',
-  imagePath: 'profile.jpg',
+  imagePath: profileImageUrl,
   twitter: 'twitter.com/doppelganger9',
   educationDetails: {
     sectionTitle: 'Formation',

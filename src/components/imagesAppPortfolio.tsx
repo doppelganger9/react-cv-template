@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { Section } from './shared/section'
+import generalifrAppIosUrl from '../assets/generalifr-app-ios.png'
+import harmoniemutuelleAppsIosUrl from '../assets/harmoniemutuelle-apps-ios.png'
 
 export function AppsImagesPortfolio (): JSX.Element {
   return (
@@ -20,8 +22,8 @@ Android
         <small>- plus de 50 mises en store depuis 2011</small>
       </h5>
       <hr />
-      <img style={{ width: '100%' }} src="generalifr-app-ios.png" alt="Application iOS Generali France" />
-      <img style={{ width: '33%' }} src="harmoniemutuelle-apps-ios.png" alt="Application iOS Harmonie Mutuelle" />
+      <img style={{ width: '100%' }} src={generalifrAppIosUrl} alt="Application iOS Generali France" />
+      <img style={{ width: '33%' }} src={harmoniemutuelleAppsIosUrl} alt="Application iOS Harmonie Mutuelle" />
     </Section>
   )
 }
