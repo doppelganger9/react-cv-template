@@ -1,7 +1,9 @@
-import { Section } from './shared/section';
+import * as React from 'react'
+import { type IExperience, type IExperiences } from '../data/experiences'
+import { Section } from './shared/section'
 
-function ListItem(props) {
-  const { item, i } = props;
+function ListItem (props: { item: IExperience, i: number }): JSX.Element {
+  const { item, i } = props
   return (
     <div className="item" key={`exp_item_${i}`}>
       <div className="meta">
@@ -9,48 +11,42 @@ function ListItem(props) {
           <h3 className="job-title">{item.title}</h3>
           <div className="time">{item.date}</div>
         </div>
-        {CompanySection({company: item.company, companyLink: item.companyLink, companyShortDetail: item.companyShortDetail})}
+        {CompanySection({ company: item.company, companyLink: item.companyLink, companyShortDetail: item.companyShortDetail })}
       </div>
       <div className="details">
         <p dangerouslySetInnerHTML={{ __html: item.description }} />
       </div>
     </div>
-  );
+  )
 }
 
-function CompanySection(props) {
-  const { company, companyLink, companyShortDetail } = props;
-  if (company && companyLink) {
-    return (
-      <div className="company">
-        {' '}
-        <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
-        {' '}
-        {companyShortDetail || ''}
-      </div>
-    );
+function CompanySection (props: { company: string, companyLink: string, companyShortDetail: string }): JSX.Element | null {
+  const { company, companyLink, companyShortDetail } = props
+  if (company == null || companyLink == null) {
+    return null
   }
-  return null;
+  return (
+    <div className="company">
+      {' '}
+      <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
+      {' '}
+      {companyShortDetail ?? ''}
+    </div>
+  )
 }
 
-export function Experiences(props: ExperiencesProps) {
-  const { icon, sectionTitle, list } = props;
+export function Experiences (props: IExperiences): JSX.Element {
+  const { icon, sectionTitle, list } = props
   return (
     <Section
       className="experieces-section"
-      icon={icon || 'briefcase'}
-      title={sectionTitle || 'Experiences'}
+      icon={icon ?? 'briefcase'}
+      title={sectionTitle ?? 'Experiences'}
       id="experiences"
     >
-      {list.map((item, i) => {
-        return ListItem({item, i});
+      {list?.map((item, i) => {
+        return ListItem({ item, i })
       })}
     </Section>
-  );
+  )
 }
-
-type ExperiencesProps = {
-  list: any[],
-  sectionTitle: string,
-  icon?: string
-};

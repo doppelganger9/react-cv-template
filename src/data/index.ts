@@ -1,15 +1,30 @@
-import profile from './profile';
-import careerProfile from './careerProfile';
-import experiences from './experiences';
-import projects from './projects';
-import tags from './tags';
+import profile from './profile'
+import careerProfile, { type ICareerProfile } from './careerProfile'
+import experiences, { type IExperiences } from './experiences'
+import tags, { type ITags } from './tags'
+import doneList from './doneList'
 
-export const data = {
+export interface IData {
+  profile: any
+  careerProfile: ICareerProfile
+  experiences: IExperiences
+  tags: ITags
+  doneList: string[]
+}
+
+export const data: IData = {
   profile,
   careerProfile,
   experiences,
-  projects,
-  tags
-};
+  tags,
+  doneList
+}
 
-export default data;
+export interface ISection<A> {
+  sectionTitle?: string
+  list?: A[]
+  icon?: string
+  description?: string
+}
+
+export default data

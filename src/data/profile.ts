@@ -1,4 +1,53 @@
-const profile = {
+import { type ISection } from '.'
+
+export interface IProfileHead {
+  name: string
+  title: string
+  imagePath: string
+}
+
+export interface IProfileLinks {
+  mail?: string
+  phoneNumber?: string
+  city?: string
+  website?: string
+  linkedin?: string
+  github?: string
+  gitlab?: string
+  bitbucket?: string
+  dev?: string
+  stackoverflow?: string
+  codepen?: string
+  twitter?: string
+}
+
+export interface IProfile extends IProfileHead, IProfileLinks {
+  educationDetails: IEducationDetails
+  languages: ILanguages
+  interests: IInterests
+}
+
+export interface IEducationDetails extends ISection<IEducationItem> {
+}
+
+export interface IEducationItem {
+  degree: string
+  school: string
+  date: string
+}
+
+export interface IInterests extends ISection<string> {
+}
+
+export interface ILanguages extends ISection<ILanguageItem> {
+}
+
+export interface ILanguageItem {
+  name: string
+  level: string
+}
+
+const profile: IProfile = {
   name: 'David Lacourt',
   title: 'Tech Lead, Full Stack Developer, Senior Software Engineer, Marié + 3 enfants',
   mail: 'david@lacourt.dev',
@@ -18,10 +67,10 @@ const profile = {
     sectionTitle: 'Formation',
     list: [
       {
-        degree: `Diplôme d'Ingénieur`,
-        school: `ESIEE Paris`,
-        date: '1996-2002',
-      },
+        degree: 'Diplôme d\'Ingénieur',
+        school: 'ESIEE Paris',
+        date: '1996-2002'
+      }
     ]
   },
   languages: {
@@ -31,7 +80,7 @@ const profile = {
       { name: 'Anglais', level: 'Professionnel' },
       { name: 'Italien', level: 'Professionnel' },
       { name: 'Japonais', level: 'Débutant' },
-      { name: 'Russe', level: 'Débutant' },
+      { name: 'Russe', level: 'Débutant' }
     ]
   },
   interests: {
@@ -41,9 +90,9 @@ const profile = {
       'Musique',
       'Jeux de rôles',
       'Competitive Programming',
-      'Open Source',
+      'Open Source'
     ]
   }
-};
+}
 
-export default profile;
+export default profile

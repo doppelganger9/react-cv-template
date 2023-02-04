@@ -1,11 +1,13 @@
-import { Section } from './shared/section';
+import * as React from 'react'
+import { Section } from './shared/section'
 
-export function AppsImagesPortfolio() {
+export function AppsImagesPortfolio (): JSX.Element {
   return (
     <Section
       className="apps-portfolio-section"
       icon="mobile"
       title="Applications Mobiles"
+      id="applications-mobiles"
     >
       <h5>
 iOS
@@ -21,5 +23,5 @@ Android
       <img style={{ width: '100%' }} src="generalifr-app-ios.png" alt="Application iOS Generali France" />
       <img style={{ width: '33%' }} src="harmoniemutuelle-apps-ios.png" alt="Application iOS Harmonie Mutuelle" />
     </Section>
-  );
+  )
 }

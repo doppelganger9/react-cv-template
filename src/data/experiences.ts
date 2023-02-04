@@ -1,7 +1,20 @@
-export const experiences = {
-  sectionTitle: '',
-  icon: null,
-  description: null,
+import { type ISection } from '.'
+
+export interface IExperiences extends ISection<IExperience> {
+}
+export interface IExperience {
+  title: string
+  company: string
+  description: string
+  companyLink: string
+  companyShortDetail: string
+  date: string
+}
+
+export const experiences: IExperiences = {
+  sectionTitle: 'Expériences',
+  icon: 'briefcase',
+  description: undefined,
   list: [
     {
       title: 'Lead Dev API, Web et Mobile pour fronts clients digitaux',
@@ -76,11 +89,11 @@ export const experiences = {
     {
       title: 'Développeur Java/JEE',
       company: 'GAN Italia/Groupama Italia, CNP Assurances, Swiss Life (prestations ID Factory/Axones)',
-      description: `Diverses missions Java/JEE. Ces expériences ayant plus de 10 ans, je ne m'étendrais pas dessus.`,
+      description: 'Diverses missions Java/JEE. Ces expériences ayant plus de 10 ans, je ne m\'étendrais pas dessus.',
       companyLink: 'http://???',
       companyShortDetail: '',
       date: '2002 - 2007.1'
-    },
+    }
     /*
     {
       title: 'Consultant Prima Platform & Développeur Senior Java/JEE',
@@ -105,8 +118,8 @@ export const experiences = {
       companyLink: 'http://???',
       companyShortDetail: '',
       date: '2002 - 2004'
-    }*/
+    } */
   ]
-};
+}
 
-export default experiences;
+export default experiences

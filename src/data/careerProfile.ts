@@ -1,6 +1,12 @@
-export const careerProfile = {
-  sectionTitle: `parcours professionnel`,
-  icon: null,
+import { type ISection } from '.'
+
+export interface ICareerProfile extends ISection<void> {
+}
+
+export const careerProfile: ICareerProfile = {
+  sectionTitle: 'parcours professionnel',
+  icon: undefined,
+  list: undefined,
   description: `
     <p>Codeur depuis l'âge de 10 ans, j'ai suivi un cursus scolaire scientifique, 
         puis une <a href="https://www.esiee.fr/">école d'ingénieur</a> qui m'a donné de solides bases générales et m'a appris à apprendre.</p>
@@ -31,6 +37,6 @@ export const careerProfile = {
     <p>En 2019, après 11 ans chez Generali, j'ai quitté mon poste interne pour me lancer en freelance.
         J'apporte à mes clients (bientôt vous, peut-être ?) mon savoir faire et mes multiples expertises.</p>
     `
-};
+}
 
-export default careerProfile;
+export default careerProfile

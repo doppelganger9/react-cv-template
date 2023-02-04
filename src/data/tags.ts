@@ -1,6 +1,11 @@
-export const tags = {
+import { type ISection } from '.'
+
+export interface ITags extends ISection<string> {
+}
+
+export const tags: ITags = {
   sectionTitle: 'Compétences',
-  icon: null,
+  icon: undefined,
   list: [
     'JavaScript',
     'Angular',
@@ -38,7 +43,11 @@ export const tags = {
     'Architecture N-Tier',
     'APIs RESTful',
     'Architecture SOA',
-    'Microservices', 'Kubernetes', 'Docker', 'Springboot']
-};
+    'Microservices',
+    'Kubernetes',
+    'Docker',
+    'Springboot'
+  ]
+}
 
-export default tags;
+export default tags

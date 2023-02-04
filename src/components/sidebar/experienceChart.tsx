@@ -1,4 +1,6 @@
-function renderLine({ icon, label, years }) {
+import * as React from 'react'
+
+function renderLine ({ icon, label, years }: { icon: string, label: string, years: number }): JSX.Element {
   return (
     <li key={label}>
       <h4>
@@ -16,20 +18,20 @@ ans
         </div>
       </h4>
     </li>
-  );
+  )
 }
 
-export function ExperienceChart () {
+export function ExperienceChart (): JSX.Element {
   const xpLines = [
     { icon: 'cloud', label: 'Web', years: (new Date()).getFullYear() - 2002 },
     { icon: 'line-chart', label: 'Agile', years: (new Date()).getFullYear() - 2008 },
-    { icon: 'mobile', label: 'Mobile', years: (new Date()).getFullYear() - 2011 },
-  ];
+    { icon: 'mobile', label: 'Mobile', years: (new Date()).getFullYear() - 2011 }
+  ]
   return (
     <div className="container-block" style={{ backgroundColor: 'rgba(0,0,0,.1)', color: 'white' }}>
       <ul className="list-unstyled">
         {xpLines.map(renderLine)}
       </ul>
     </div>
-  );
+  )
 }
