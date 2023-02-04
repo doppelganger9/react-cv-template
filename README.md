@@ -1,5 +1,7 @@
 # React CV Template
 
+[![Deploy React Vite App to Pages](https://github.com/doppelganger9/react-cv-template/actions/workflows/react-vite.yml/badge.svg)](https://github.com/doppelganger9/react-cv-template/actions/workflows/react-vite.yml)
+
 A React CV Template APP with six different color schemes.
 
 ## 2023: Vite and Custom Elements
