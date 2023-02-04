@@ -12,7 +12,17 @@ const config: UserConfig = {
         ]
       }
     })
-  ]
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        entryFileNames: 'assets/[name].mjs',
+        chunkFileNames: 'assets/[name].mjs',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
 }
 
 if (process.env.BASE != null) {
