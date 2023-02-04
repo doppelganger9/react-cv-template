@@ -37,7 +37,7 @@ jobs:
       - name: Clean Install deps
         run: npm ci
       - name: Build React App with Vite
-        run: BASE=/react-cv-template/ npm run build
+        run: BASE=https://doppelganger9.github.io/react-cv-template/ npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
