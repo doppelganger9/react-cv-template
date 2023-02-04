@@ -55,16 +55,16 @@ export function CVApp (props: IData): JSX.Element {
   return (
     <div>
       <style>
-        {bootstrapStyles.replace('body', ':host')}
+        {bootstrapStyles.replaceAll('body', ':host')}
       </style>
       <style>
-        {fontAwesomeStyles.replace('body', ':host')}
+        {fontAwesomeStyles.replaceAll('body', ':host')}
       </style>
       <style>
-        {themeStyles.replace('body', ':host')}
+        {themeStyles.replaceAll('body', ':host')}
       </style>
       <style>
-        {appStyles.replace('body', ':host')}
+        {appStyles.replaceAll('body', ':host')}
       </style>
       <div className="wrapper">
         <Sidebar

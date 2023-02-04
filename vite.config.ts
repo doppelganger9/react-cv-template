@@ -25,10 +25,5 @@ const config: UserConfig = {
   }
 }
 
-if (process.env.BASE != null) {
-  console.log(`using base : ${String(process.env.BASE)}`)
-  config.base = process.env.BASE
-}
-
 // https://vitejs.dev/config/
 export default defineConfig(config)
