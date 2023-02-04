@@ -1,0 +1,22 @@
+export function Section(props) {
+  const {
+    className, id, icon, title, children
+  } = props;
+  return (
+    <section className={`section ${className || ''}`} id={id || null}>
+      <h2 className="section-title">
+        <i className={`fa fa-${icon}`} />
+        { title }
+      </h2>
+      { children }
+    </section>
+  );
+}
+
+// Section.propTypes = {
+//   className: PropTypes.string.isRequired,
+//   title: PropTypes.string.isRequired,
+//   icon: PropTypes.string.isRequired,
+//   children: PropTypes.node.isRequired,
+//   id: PropTypes.string
+// };

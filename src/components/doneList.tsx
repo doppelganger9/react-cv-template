@@ -1,5 +1,4 @@
-import React from 'react';
-import Section from './shared/section';
+import { Section } from './shared/section';
 
 const list = [
   'fusionner le code web et mobile pour avoir une seule base de code multi-plateforme avec Capacitor et Angular',
@@ -17,12 +16,12 @@ const list = [
   'déployer en production des Applications Java ou Mobiles',
 ];
 
-export default function () {
+export function DoneThisAndThat () {
   return (
     <Section id="done-this" title="Exemples de réalisations" icon="list-ul">
       <ul className="list-unstyled">
         {list.map(x => (
-          <li>
+          <li key={x}>
 -
             {' '}
             {x}

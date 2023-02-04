@@ -1,5 +1,3 @@
-import React from 'react';
-
 function renderLine({ icon, label, years }) {
   return (
     <li key={label}>
@@ -21,8 +19,7 @@ ans
   );
 }
 
-
-export default function () {
+export function ExperienceChart () {
   const xpLines = [
     { icon: 'cloud', label: 'Web', years: (new Date()).getFullYear() - 2002 },
     { icon: 'line-chart', label: 'Agile', years: (new Date()).getFullYear() - 2008 },

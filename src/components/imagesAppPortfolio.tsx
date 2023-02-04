@@ -1,7 +1,6 @@
-import React from 'react';
-import Section from './shared/section';
+import { Section } from './shared/section';
 
-export default function () {
+export function AppsImagesPortfolio() {
   return (
     <Section
       className="apps-portfolio-section"
