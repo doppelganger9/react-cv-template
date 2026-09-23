@@ -20,15 +20,17 @@ function ListItem (props: { item: IExperience, i: number }): JSX.Element {
   )
 }
 
-function CompanySection (props: { company: string, companyLink: string, companyShortDetail: string }): JSX.Element | null {
+function CompanySection (props: { company: string, companyLink?: string, companyShortDetail: string }): JSX.Element | null {
   const { company, companyLink, companyShortDetail } = props
-  if (company == null || companyLink == null) {
+  if (company == null) {
     return null
   }
   return (
     <div className="company">
       {' '}
-      <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
+      {companyLink != null
+        ? <a href={companyLink} target="_blank" rel="noopener noreferrer">{company}</a>
+        : <span>{company}</span>}
       {' '}
       {companyShortDetail ?? ''}
     </div>

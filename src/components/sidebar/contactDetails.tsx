@@ -14,12 +14,15 @@ function ListItem (props: ListItemProps): JSX.Element | null {
     return null
   }
   let href = data
+  let protocolRelative = true
   switch (type) {
     case 'email':
-      href = `mailto: ${data}`
+      href = `mailto:${data}`
+      protocolRelative = false
       break
     case 'phone':
       href = `tel:${data}`
+      protocolRelative = false
       break
     case 'city':
       href = `www.google.com/maps/search/?api=1&query=${data}`
@@ -28,7 +31,7 @@ function ListItem (props: ListItemProps): JSX.Element | null {
   return (
     <li className={className}>
       <i className={`fa ${iconName}`} />
-      <a href={`//${href}`} target="_blank" rel="noopener noreferrer">
+      <a href={protocolRelative ? `//${href}` : href} target="_blank" rel="noopener noreferrer">
         {' '}
         {data}
         {' '}

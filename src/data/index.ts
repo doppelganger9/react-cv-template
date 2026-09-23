@@ -3,6 +3,7 @@ import careerProfile, { type ICareerProfile } from './careerProfile'
 import experiences, { type IExperiences } from './experiences'
 import tags, { type ITags } from './tags'
 import doneList from './doneList'
+import proofPoints, { type IProofPoint } from './proofPoints'
 
 export interface IData {
   profile: any
@@ -10,6 +11,7 @@ export interface IData {
   experiences: IExperiences
   tags: ITags
   doneList: string[]
+  proofPoints: IProofPoint[]
 }
 
 export const data: IData = {
@@ -17,7 +19,8 @@ export const data: IData = {
   careerProfile,
   experiences,
   tags,
-  doneList
+  doneList,
+  proofPoints
 }
 
 export interface ISection<A> {

@@ -4,9 +4,30 @@ export interface ITags extends ISection<string> {
 }
 
 export const tags: ITags = {
-  sectionTitle: 'Compétences',
+  sectionTitle: 'Technologies & pratiques',
   icon: undefined,
   list: [
+    'Java',
+    'Spring Boot',
+    'TypeScript',
+    'Angular',
+    'APIs RESTful',
+    'Architecture logicielle',
+    'Microservices',
+    'Kafka',
+    'OAuth2 / OpenID Connect',
+    'Keycloak',
+    'Web & Mobile',
+    'Ionic / Capacitor',
+    'Kubernetes',
+    'CI/CD',
+    'TDD',
+    'Code Review',
+    'Git',
+    'Agile / Scrum',
+    'Leadership technique',
+    'Ingénierie logicielle augmentée par IA',
+    /* Autres technologies et pratiques du CV historique, conservées ici.
     'JavaScript',
     'Angular',
     'ReactJS',
@@ -47,6 +68,7 @@ export const tags: ITags = {
     'Kubernetes',
     'Docker',
     'Springboot'
+    */
   ]
 }
 

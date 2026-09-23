@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Section } from './shared/section'
 import langsLegendUrl from '../assets/langs-legend.png'
-import langsGraphUrl from '../assets/langs-graph.png'
+import langsGraphUrl from '../assets/langs-graph.svg'
 
 export function LangEvolution (): JSX.Element {
   return (
