@@ -29,9 +29,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6.1.0
+        uses: actions/checkout@v6
       - name: Setup Node.js environment
-        uses: actions/setup-node@6.5.0
+        uses: actions/setup-node@7
         with:
           cache: 'npm'
       - name: Clean Install deps
@@ -39,12 +39,12 @@ jobs:
       - name: Build React App with Vite
         run: npm run build -- --base=https://doppelganger9.github.io/react-cv-template/
       - name: Setup Pages
-        uses: actions/configure-pages@v6.0.0
+        uses: actions/configure-pages@v6
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5.0.0
+        uses: actions/upload-pages-artifact@v5
         with:
           # Upload dist/ repository
           path: 'dist/'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5.0.1
+        uses: actions/deploy-pages@v5
