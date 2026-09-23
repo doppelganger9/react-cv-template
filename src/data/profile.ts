@@ -50,7 +50,7 @@ export interface ILanguageItem {
 
 const profile: IProfile = {
   name: 'David Lacourt',
-  title: 'Tech Lead, Full Stack Developer, Senior Software Engineer, Marié + 3 enfants',
+  title: 'Senior Software Engineer, Tech Lead hands-on, Web & Mobile, Marié + 3 enfants',
   mail: 'david@lacourt.dev',
   // phoneNumber: 'sorry, my phone number is not open source!',
   city: 'Senlis',
@@ -71,6 +71,11 @@ const profile: IProfile = {
         degree: 'Diplôme d\'Ingénieur',
         school: 'ESIEE Paris',
         date: '1996-2002'
+      },
+      {
+        degree: 'Deviens Meilleur Scrum Master',
+        school: 'Formation et ateliers pratiques à distance',
+        date: '2022'
       }
     ]
   },

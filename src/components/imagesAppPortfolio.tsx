@@ -14,12 +14,12 @@ export function AppsImagesPortfolio (): JSX.Element {
       <h5>
 iOS
         {' '}
-        <small>- plus de 70 mises en store depuis 2011</small>
+        <small>- environ 90 mises en store depuis 2011</small>
       </h5>
       <h5>
 Android
         {' '}
-        <small>- plus de 50 mises en store depuis 2011</small>
+        <small>- environ 70 mises en store depuis 2011</small>
       </h5>
       <hr />
       <img style={{ width: '100%' }} src={generalifrAppIosUrl} alt="Application iOS Generali France" />

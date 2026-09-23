@@ -8,6 +8,21 @@ export const careerProfile: ICareerProfile = {
   icon: undefined,
   list: undefined,
   description: `
+    <p><b>Senior Software Engineer / Tech Lead hands-on</b>, je fabrique du logiciel depuis 24 ans. J'aime prendre un sujet de bout en bout : comprendre le besoin, entrer dans un système existant, choisir une solution pragmatique et la construire avec l'équipe. <b>Codeur depuis l'âge de 10 ans</b>, j'ai suivi un cursus scientifique puis une <a href="https://www.esiee.fr/">école d'ingénieur</a>. À la sortie, j'ai commencé dans une startup ; la bulle Internet a éclaté, et une SSII m'a envoyé chez Swiss Life. Depuis 2002, j'ai surtout travaillé dans l'assurance et les mutuelles — des métiers que je connais maintenant de l'intérieur.</p>
+
+    <p>Je suis passé de Java/JEE au mobile natif, puis à JavaScript et au mobile hybride. En 2015, mon équipe m'a élu <b>Tech Lead</b> ; j'ai alors tout fait pour être à la hauteur du titre : code review, pratiques partagées, tests, CI/CD et accompagnement des développeurs.</p>
+
+    <p>Après 11 ans chez Generali, j'ai quitté mon poste interne en 2019 pour me lancer en freelance. Chez Harmonie Mutuelle, j'ai rapproché le Web et le mobile avant d'y revenir pour travailler sur le SI adhérent et ses parcours d'identité. Entre-temps, je suis retourné chez Generali — dans mon ancienne équipe, avec une nouvelle casquette d'expert technique.</p>
+
+    <p>Je veux rester dans la <b>fabrication du logiciel</b>. L'Agile, le rôle de Scrum Master et la facilitation m'aident à faire avancer le travail de l'équipe sans m'éloigner du code. Plus récemment, j'ai commencé à intégrer Copilot puis des agents IA à ma pratique, en gardant la responsabilité des choix techniques et du résultat.</p>
+    `
+}
+
+export default careerProfile
+
+
+/* Récit original conservé lors de sa mise à jour.
+  description: `
     <p>Codeur depuis l'âge de 10 ans, j'ai suivi un cursus scolaire scientifique, 
         puis une <a href="https://www.esiee.fr/">école d'ingénieur</a> qui m'a donné de solides bases générales et m'a appris à apprendre.</p>
 
@@ -37,6 +52,4 @@ export const careerProfile: ICareerProfile = {
     <p>En 2019, après 11 ans chez Generali, j'ai quitté mon poste interne pour me lancer en freelance.
         J'apporte à mes clients (bientôt vous, peut-être ?) mon savoir faire et mes multiples expertises.</p>
     `
-}
-
-export default careerProfile
+*/
