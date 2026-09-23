@@ -37,12 +37,13 @@ function renderOpenSourcePart (): JSX.Element | null {
 }
 
 function renderProfileContainer (props: IProfileHead): JSX.Element | null {
-  const { name, title, imagePath } = props
+  const { name, title, availability, imagePath } = props
 
   return (
     <ProfileContainer
       name={name}
       title={title}
+      availability={availability}
       imagePath={imagePath}
     />
   )

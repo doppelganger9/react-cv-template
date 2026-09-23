@@ -4,6 +4,7 @@ import profileImageUrl from '../assets/profile.jpg'
 export interface IProfileHead {
   name: string
   title: string
+  availability?: string
   imagePath: string
 }
 
@@ -51,6 +52,7 @@ export interface ILanguageItem {
 const profile: IProfile = {
   name: 'David Lacourt',
   title: 'Senior Software Engineer, Tech Lead hands-on, Web & Mobile',
+  availability: 'Disponible dès octobre 2026',
   mail: 'david@lacourt.dev',
   // phoneNumber: 'sorry, my phone number is not open source!',
   city: 'Senlis',

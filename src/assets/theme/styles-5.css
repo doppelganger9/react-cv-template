@@ -369,6 +369,14 @@ ul.skillset {
     font-size: 7pt !important;
     line-height: 1.15;
   }
+  .sidebar-wrapper .availability {
+    margin: 4px 0 0 !important;
+    padding: 2px 4px !important;
+    color: #2d7788 !important;
+    background: #fff !important;
+    font-size: 6.8pt !important;
+    line-height: 1.15;
+  }
   .sidebar-wrapper .container-block {
     padding: 7px 9px !important;
     color: #34404b !important;
