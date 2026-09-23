@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Setup Node.js environment
-        uses: actions/setup-node@7
+        uses: actions/setup-node@v7
         with:
           cache: 'npm'
       - name: Clean Install deps
