@@ -5,7 +5,7 @@ function ProfilePicture ({ imagePath }: { imagePath?: string }): JSX.Element | n
   if (imagePath == null) {
     return null
   }
-  return (<img className="profile" src={imagePath} alt="" style={{ maxWidth: 185 }} />)
+  return (<img className="profile" src={imagePath} alt="Portrait de David Lacourt" />)
 }
 
 export function ProfileContainer (props: IProfileHead): JSX.Element {
