@@ -12,6 +12,8 @@ import { DoneThisAndThat } from './components/doneList'
 import { AppsImagesPortfolio } from './components/imagesAppPortfolio'
 import { Sidebar } from './components/sidebar'
 import { Tags } from './components/tags'
+import { ProofPoints } from './components/proofPoints'
+import { AiWritingOutro } from './components/aiWritingOutro'
 import { type IData } from './data'
 
 function renderExperiencesSection (props: IData): JSX.Element | null {
@@ -72,11 +74,13 @@ export function CVApp (props: IData): JSX.Element {
         />
         <div className="main-wrapper">
           {renderCareerProfile(props)}
-          <LangEvolution />
+          <ProofPoints list={props.proofPoints} />
           {renderExperiencesSection(props)}
-          <AppsImagesPortfolio />
           {renderTags(props)}
+          <AppsImagesPortfolio />
+          <LangEvolution />
           <DoneThisAndThat list={[...props.doneList]} />
+          <AiWritingOutro />
         </div>
       </div>
     </div>
