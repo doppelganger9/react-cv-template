@@ -11,16 +11,8 @@ export function AppsImagesPortfolio (): JSX.Element {
       title="Applications Mobiles"
       id="applications-mobiles"
     >
-      <h5>
-iOS
-        {' '}
-        <small>- environ 90 mises en store depuis 2011</small>
-      </h5>
-      <h5>
-Android
-        {' '}
-        <small>- environ 70 mises en store depuis 2011</small>
-      </h5>
+      <h5>iOS</h5>
+      <h5>Android</h5>
       <hr />
       <img style={{ width: '100%' }} src={generalifrAppIosUrl} alt="Application iOS Generali France" />
       <img style={{ width: '33%' }} src={harmoniemutuelleAppsIosUrl} alt="Application iOS Harmonie Mutuelle" />

@@ -50,7 +50,7 @@ export interface ILanguageItem {
 
 const profile: IProfile = {
   name: 'David Lacourt',
-  title: 'Senior Software Engineer, Tech Lead hands-on, Web & Mobile, Marié + 3 enfants',
+  title: 'Senior Software Engineer, Tech Lead hands-on, Web & Mobile',
   mail: 'david@lacourt.dev',
   // phoneNumber: 'sorry, my phone number is not open source!',
   city: 'Senlis',
