@@ -94,9 +94,7 @@ const profile: IProfile = {
     list: [
       'Canne de Combat (Compétition, Arbitrage, Monitorat)',
       'Musique',
-      'Jeux de rôles',
-      'Competitive Programming',
-      'Open Source'
+      'Jeux de rôles'
     ]
   }
 }
