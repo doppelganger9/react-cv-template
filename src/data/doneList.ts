@@ -8,7 +8,7 @@ export const doneList: string[] = [
   'apprendre une nouvelle commande Git chaque jour depuis 2007 : plus de 10 000 commits sur 60 dépôts internes et externes',
   'mettre en place l\'intégration et le déploiement continus pour permettre la recette continue — et pousser l\'automatisation plus loin !',
   'démarrer un projet Java ou Mobile de zéro',
-  'animer une équipe technique, des cérémonies agiles, des séances d\'idéation (jusqu\'à 25 personnes)',
+  `animer une équipe technique, des rétrospectives et ateliers d'idéation (jusqu\'à 25 personnes), faciliter les échanges de l'équipe et accompagner le PO dans l'affinage des sujets`,
   'résoudre des problèmes de build (Xcode Error 65 forever)',
   'passer des heures à re-expliquer et affiner des architectures sur tableau blanc avec la terre entière',
   'employé et client: "Eat Your Own Dog Food"',
