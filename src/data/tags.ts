@@ -26,7 +26,7 @@ export const tags: ITags = {
     'Git',
     'Agile / Scrum',
     'Leadership technique',
-    'Ingénierie logicielle augmentée par IA',
+    'Copilot & Agents IA',
     /* Autres technologies et pratiques du CV historique, conservées ici.
     'JavaScript',
     'Angular',
