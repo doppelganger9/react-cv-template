@@ -11,8 +11,8 @@ export function AiWritingOutro (): JSX.Element {
       <p>
         Ce CV a lui-même été écrit avec l’aide d’une IA : j’ai apporté les faits, les anecdotes et le ton, puis gardé,
         corrigé ou réécrit ses propositions. <strong>Saurez-vous distinguer les phrases que j’ai écrites de celles que
-        j’ai remaniées avec une IA ?</strong> Je raconterai les coulisses dans un <a href="https://lacourt.dev">article
-        sur mon blog</a>, à lire quand il sera publié.
+        j’ai remaniées avec une IA ?</strong> J'ai raconté les coulisses dans un <a href="https://lacourt.dev/2026/09/25">article
+        sur mon blog</a>.
       </p>
     </Section>
   )
